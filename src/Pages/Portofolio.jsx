@@ -456,7 +456,6 @@ export default function FullWidthTabs() {
             />
           </Tabs>
         </AppBar>
-<TabPanel value={value} index={0} dir={theme.direction}>
 
 
           <TabPanel value={value} index={0} dir={theme.direction}>
@@ -528,7 +527,6 @@ export default function FullWidthTabs() {
               </div>
             </div>
           </TabPanel>
-</TabPanel>
 
       </Box>
     </div>
