@@ -117,6 +117,62 @@ function a11yProps(index) {
 //   { icon: "SweetAlert.svg", language: "SweetAlert2" },
 // ];
 
+const defaultCertificates = [
+  {
+    id: 1,
+    Img: "avodha.jpg",
+    Title: "Python & Django Programming Certificate",
+    Description: "",
+    Link: ""
+  },
+  {
+    id: 2,
+    Img: "oracle.png",
+    Title: "Databases for Developers: Foundations",
+    Description: "",
+    Link: ""
+  },
+  {
+    id: 3,
+    Img: "genai.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },
+    {
+    id: 4,
+    Img: "nss.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },  
+  {
+    id: 5,
+    Img: "nptel.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },
+  {
+    id: 6,
+    Img: "ieee.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },
+    {
+    id: 7,
+    Img: "nasa.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },
+
+  
+  // Add more certificates as needed
+];
+
+
 const defaultProjects = [
   {
     id: 1,
@@ -250,7 +306,6 @@ const techStacks = [
   // Frameworks & Libraries
   { icon: "django.svg", language: "Django" },
   { icon: "flutter.svg", language: "Flutter" },
-  { icon: "react.svg", language: "React" },
   { icon: "opencv.svg", language: "OpenCV" },
 
   // Databases
@@ -265,20 +320,18 @@ const techStacks = [
   { icon: "pycharm.svg", language: "PyCharm" },
 
   // Deployment & Cloud
-  { icon: "render.svg", language: "Render" },
+  { icon: "render.png", language: "Render" },
   { icon: "vercel.svg", language: "Vercel" },
 
   // Other Skills / Libraries
-  { icon: "ml.svg", language: "Machine Learning" },
-  { icon: "ai.svg", language: "AI / Deep Learning" },
-  { icon: "opencv.svg", language: "Computer Vision" }
+  { icon: "ai.png", language: "AI / Deep Learning" },
 ];
 
 export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
   const [projects, setProjects] = useState(defaultProjects);
-  const [certificates, setCertificates] = useState([]);
+  const [certificates, setCertificates] = useState([defaultCertificates]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [showAllCertificates, setShowAllCertificates] = useState(false);
   const isMobile = window.innerWidth < 768;
@@ -346,7 +399,7 @@ export default function FullWidthTabs() {
   }, []);
 
   const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
-  const displayedCertificates = showAllCertificates ? certificates : certificates.slice(0, initialItems);
+  const displayedCertificates = certificates
 
   // Sisa dari komponen (return statement) tidak ada perubahan
   return (
@@ -491,7 +544,7 @@ export default function FullWidthTabs() {
           <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
-                {displayedCertificates.map((certificate, index) => (
+                {defaultCertificates.map((certificate, index) => (
                   <div
                     key={certificate.id || index}
                     data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
