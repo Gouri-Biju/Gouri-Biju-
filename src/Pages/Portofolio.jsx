@@ -132,6 +132,20 @@ const defaultCertificates = [
     Description: "",
     Link: ""
   },
+    {
+    id: 5,
+    Img: "nptel.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },
+      {
+    id: 7,
+    Img: "nasa.png",
+    Title: "Machine Learning Certificate",
+    Description: "Successfully trained ML models and implemented projects",
+    Link: "https://example.com/ml-cert"
+  },
   {
     id: 3,
     Img: "genai.png",
@@ -146,13 +160,7 @@ const defaultCertificates = [
     Description: "Successfully trained ML models and implemented projects",
     Link: "https://example.com/ml-cert"
   },  
-  {
-    id: 5,
-    Img: "nptel.png",
-    Title: "Machine Learning Certificate",
-    Description: "Successfully trained ML models and implemented projects",
-    Link: "https://example.com/ml-cert"
-  },
+
   {
     id: 6,
     Img: "ieee.png",
@@ -160,13 +168,7 @@ const defaultCertificates = [
     Description: "Successfully trained ML models and implemented projects",
     Link: "https://example.com/ml-cert"
   },
-    {
-    id: 7,
-    Img: "nasa.png",
-    Title: "Machine Learning Certificate",
-    Description: "Successfully trained ML models and implemented projects",
-    Link: "https://example.com/ml-cert"
-  },
+
 
   
   // Add more certificates as needed
@@ -176,7 +178,7 @@ const defaultCertificates = [
 const defaultProjects = [
   {
     id: 1,
-    Img: "accident-detection.png",
+    Img: "NextLeapAi.png",
     Title: "NextLeap (AI powered Career Guidance Admission Chance Predictor )",
     Description: "Built an ML-powered adaptive chatbot and admission predictor platform for students, parents, and colleges.",
     Link: "https://github.com/Gouri-Biju/NextLeap-AI-powered-Career-Guidance-Admission-Chance-Predictor",
@@ -193,54 +195,54 @@ const defaultProjects = [
     Img: "smart.png",
     Title: "Smart Ration",
     Description: "Developed a digital Public Distribution System (PDS)",
-    Link: "https://github.com/yourusername/career-guidance",
+    Link: "https://github.com/Gouri-Biju/Smart-Ration-Python-Django-Flutter",
   },
   {
     id: 5,
     Img: "street.png",
     Title: "AI-Powered Smart Street and Home Security System",
     Description: "Developed AI system for accident detection, emergency alerts, gesture-based help alarm for women’s safety and adaptive lighting automation ",
-    Link: "https://github.com/yourusername/landslide-detection",
+    Link: "https://github.com/Gouri-Biju/AI-Powered-Street-Security-System",
   },
   {
     id: 6,
     Img: "employee.png",
     Title: "VisionGuard: Employee Detection System",
     Description: "Developed a computer vision pipeline with OpenCV to detect and highlight employees in images using LAB color space segmentation, contour analysis, and area-based filtering.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/Employee-Detection-with-OpenCV",
   },
   {
     id: 7,
     Img: "candyv.png",
     Title: "CandyVision: Intelligent Candy Detection and Counting System (Using Computer Vision)",
     Description: "Developed a vision-based system using OpenCV for accurate candy detection and counting, leveraging contour analysis, adaptive thresholding, and real-time recognition.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/Opencv-Counting-Candies-From-Video",
   },
   {
     id: 8,
     Img: "yolo.png",
     Title: "MultiVision AI: Real-Time Object Detection with YOLOv3",
     Description: "Engineered a YOLOv3-powered detection pipeline with OpenCV, integrating Non-Maximum Suppression (NMS) and confidence-based filtering for precise multi-object tracking in real time.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/YOLO_Object_Detection_Pipeline",
   },  {
     id: 9,
     Img: "portfolio.png",
     Title: "ATS-Friendly Resume Builder",
     Description: "Built an AI-powered ATS resume generator using Streamlit and Hugging Face Transformers, automating professional summary, project descriptions, and internship details to align resumes with job descriptions.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/ATS-Friendly-Resume-Builder",
   },  {
     id: 10,
     Img: "Fooddelivery.png",
     Title: "FoodieHub: Online Food Ordering & Delivery Platform",
     Description: "Built a React-based frontend for a food booking and delivery platform, featuring restaurant browsing, menu selection, cart management and payment.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/Food-Delivery-Website",
   },
   {
     id: 11,
     Img: "titanic.png",
     Title: "Titanic Survival Prediction App",
     Description: "Built an interactive ML web app with Streamlit that predicts Titanic passenger survival using a trained classification model with engineered features.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/Titanic-EDA-Project",
   },
   {
     id: 12,
@@ -248,32 +250,26 @@ const defaultProjects = [
     Title: "CarromVision: Queen Coin Detection System",
     Description: "Engineered a computer vision solution using OpenCV to detect the Queen coin on a Carrom board through LAB color segmentation, contour analysis, and shape detection.",
     Link: "https://github.com/Gouri-Biju/CarromQueenDetector-OpenCV",
-  },  {
-    id: 13,
-    Img: "portfolio.png",
-    Title: "Titanic Survival Prediction App",
-    Description: "Built an interactive ML web app with Streamlit that predicts Titanic passenger survival using a trained classification model with engineered features.",
-    Link: "https://github.com/Gouri-Biju/Opencv-Counting-Objects",
-  },  {
+  },   {
     id: 14,
     Img: "portfolio.png",
     Title: "Automated Object Counting System using OpenCV",
     Description: "Developed an OpenCV-based system to detect and count objects using preprocessing, contour detection, and adaptive thresholding.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/Opencv-Counting-Objects",
   },  
   {
     id: 15,
     Img: "portfolio.png",
     Title: "Sports Complex Booking Platform",
     Description: "Built with Django, Firebase & MySQL for real-time slot reservations, booking history, and admin dispute management, automating the manual process.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/SportsComplexManagementSystemWebsite",
   },
 {
     id: 16,
     Img: "portfolio.png",
     Title: "PathFinder: Career & Job Guidance Platform",
     Description: "Connects students with mentors, institutions, and AI-based suggestions, enabling seminar participation and direct access to job opportunities for smart career decisions.",
-    Link: "https://github.com/yourusername/portfolio",
+    Link: "https://github.com/Gouri-Biju/PathFinder-Career-Job-Guidance-Platform",
   },
   {
     id: 17,

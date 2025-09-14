@@ -19,6 +19,7 @@ const StatusBadge = memo(() => (
   </div>
 ));
 
+
 const MainTitle = memo(() => (
   <div className="space-y-2" data-aos="fade-up" data-aos-delay="600">
     <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
@@ -159,6 +160,7 @@ const Home = () => {
   }, [handleTyping]);
 
   // Lottie configuration
+
   const lottieOptions = {
     src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
     loop: true,
@@ -240,6 +242,7 @@ Creating full-stack and AI-powered solutions to solve real-world challenges.
                 <div className={`relative lg:left-12 z-10 w-full opacity-90 transform transition-transform duration-500 ${
                   isHovering ? "scale-105" : "scale-100"
                 }`}>
+
                   <DotLottieReact {...lottieOptions} />
                 </div>
 

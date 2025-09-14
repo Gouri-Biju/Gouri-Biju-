@@ -124,7 +124,7 @@ const AboutPage = () => {
 
     return {
       totalProjects: 17,
-      totalCertificates: storedCertificates.length,
+      totalCertificates: 7,
       YearExperience: experience
     };
   }, []);
